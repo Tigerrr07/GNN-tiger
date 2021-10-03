@@ -1,22 +1,30 @@
-考虑带权的information networks.
+# 交叉熵
 
-* Frist-order Proximity
+概率分布$q$，真实分布$p$，
+$$
+\begin{aligned}
+H(p,q)&=\mathbb{E}_p(-\mathrm{log}\ q(x)) \\
+&= -\sum_x p(x)\ \mathrm{log}\ q(x)
+\end{aligned}
+$$
 
-pairwise proximity
+# KL散度
 
-$w_{uv}$ indicates the frist-order proximity between $u$ and $v$. no edges, frist-order proximity is 0
-
-* Second-order Proximity
-
-let $p_u=(w_{u,1},...,w_{u,|V|})$ denote the frist-order proximity of $u$ with all the other vertices.
-
-second-order proximity between $u$ and $v$ is determined by similarity between $p_u$ and $p_v$。
-
-Several requirements:
-
-* Preserve both the first-order proximity and the second-order proximity between the vertices.
-* Scale for very large networks.
-* Deal with arbitrary types of edges: directed, undirected and /or weighted.
+KL散度（KL Divergence），也叫KL距离或相对熵，是用概率分布$q$来近似$p$所造成的信息损失量。
+$$
+\begin{aligned}
+KL(p,q)&=H(p,q)-H(p)\\
+&= \sum_x p(x) \mathrm{log} \frac{p(x)}{q(x)}
+\end{aligned}
+$$
 
 
 
+# 负采样
+
+
+
+真实logistic function加上噪声分布采集的$k$个sample的logistic function. Replace every $\mathrm{log}P(w_O|w_I)$ term by the objective:
+$$
+\mathrm{log}\ \sigma(v_{wO}'^\top \ v_{w_I})+
+$$
