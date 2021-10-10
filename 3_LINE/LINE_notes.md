@@ -32,8 +32,6 @@ Present several extesions of the original Skim-Gram model.
 
 # Negative Sampling
 
-
-
 真实logistic function加上噪声分布采集的$k$个sample的logistic function. Replace every $\mathrm{log}P(w_O|w_I)$ term by the objective:
 $$
 \mathrm{log}\ \sigma(v_{wO}'^\top \ v_{wI})+\sum_{i=1}^k \mathbb{E}_{w_i \sim P_n(w)}[\mathrm{log}(-v_{w}'^\top  v_{wI})]
