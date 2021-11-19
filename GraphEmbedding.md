@@ -26,4 +26,11 @@ LINE、SDNE都是重构一阶相似性和二阶相似性，只是使用的模型
 
 参考资料：
 
-03-noddeeb
+[CS224W | Home (stanford.edu)](http://web.stanford.edu/class/cs224w/)
+
+[Graph Representation Learning Book (mcgill.ca)](https://www.cs.mcgill.ca/~wlh/grl_book/)
+
+[深度学习中不得不学的Graph Embedding方法 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/64200072)
+
+[【Graph Embedding】DeepWalk：算法原理，实现和应用 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/56380812)
+
